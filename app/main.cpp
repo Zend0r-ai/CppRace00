@@ -55,15 +55,6 @@ int main()
     ui_score.setOutlineColor(sf::Color::Blue);
     ui_score.setFillColor(sf::Color::Magenta);
 
-    sf::Text text2;
-    text2.setString("DO YOU WANNA PLAY AGAIN? [ PRESS SPACE ]");
-    text2.setFont(font);
-    text2.setPosition(WIDTH/2-300,WIDTH/2-20);
-    text2.setCharacterSize(15);
-    text2.setOutlineThickness(1);
-    text2.setOutlineColor(sf::Color::Blue);
-    text2.setFillColor(sf::Color::Green);
-
     sf::Text ui_time;
     ui_time.setFont(font);
     ui_time.setPosition(20,20);
@@ -90,10 +81,6 @@ int main()
 
     while(window.isOpen())
     {
-        ui_score.setString("SCORE : "+std::to_string(score));
-        ui_hscore.setString("H-SCORE : "+hscore);
-
-
         if(std::to_string(minutes).length() < 2 && std::to_string(seconds).length() < 2)
             ui_time.setString("TIME 0"+std::to_string(minutes)+":0"+std::to_string(seconds));
         else if(std::to_string(minutes).length() < 2 && std::to_string(seconds).length() > 1)
@@ -101,11 +88,11 @@ int main()
         else
             ui_time.setString("TIME "+std::to_string(minutes)+":"+std::to_string(seconds));
 
-        if(!loose || snake.GetSnakeSize() >= 1)
+        if(!loose && snake.GetSnakeSize() > 1)
         {
             game.getSnake(snake.getPosition());
-            game.update(snake,score);
-            loose=snake.check_collision();
+            loose = snake.check_collision();
+            loose = game.update(snake,score, seconds);
 
             if(diff_chrono.getElapsedTime().asSeconds()  > 15)
             {
@@ -169,38 +156,7 @@ int main()
         }
         else
         {
-            sf::Event event;
-            try{
-                ui_score.setString("YOUR SCORE : " + std::to_string(score));
-                if(score > static_cast<unsigned int>(std::stoi(hscore))) getHIScore(hscore,score,1);
-                ui_score.setPosition(WIDTH/2-100,HEIGHT/2);
-
-
-                while(window.pollEvent(event))
-                {
-                    if(event.type == sf::Event::Closed) window.close();
-                    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
-                    {
-                        snake.reset(32,64);
-                        snake.shrink();
-                        snake.setDirection(0);
-                        score=0;
-                        delay=0.09;
-                        diff_chrono.restart();
-                        ui_score.setPosition(WIDTH-400,20);
-                        loose=false;
-                        minutes=0;
-                        seconds=0;
-                        getHIScore(hscore,score);
-                    }
-                }
-            } catch (std::invalid_argument& e) {
-                window.clear();
-                window.draw(ui_score);
-                window.draw(text2);
-                window.display();
-            }
-
+            window.close();
         }
 
     }

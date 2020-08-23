@@ -13,10 +13,14 @@ class Snake
 public:
     Snake()
     {
+//        int pos_x = (rand()%35+4)*16;
+//        int pos_y = (rand()%35+4)*16;
+//        for(int i = 0; i < 4; i++)
+//            this->_snake.push_back(sf::Vector2f(pos_x + (16 * 0),pos_y));
         this->_snake.push_back(sf::Vector2f(32,64));
-        this->_snake.push_back(sf::Vector2f(16,64));
-        this->_snake.push_back(sf::Vector2f(0,64));
-        this->_snake.push_back(sf::Vector2f(-16,64));
+        this->_snake.push_back(sf::Vector2f(48,64));
+        this->_snake.push_back(sf::Vector2f(64,64));
+        this->_snake.push_back(sf::Vector2f(78,64));
     }
 
     std::vector<sf::Vector2f> getPosition()
@@ -40,10 +44,10 @@ public:
         sf::Vector2f old_pos;
         sf::Vector2f tmp_pos;
 
-        if(this->_direction == 0)this->_snake.at(0).x += CELL_W; //DX
-        if(this->_direction == 1)this->_snake.at(0).x -= CELL_W; //SX
-        if(this->_direction == 2)this->_snake.at(0).y -= CELL_W; //UP
-        if(this->_direction == 3)this->_snake.at(0).y += CELL_W; //DOWN
+        if(this->_direction == 0)this->_snake.at(0).x += CELL_W;
+        if(this->_direction == 1)this->_snake.at(0).x -= CELL_W;
+        if(this->_direction == 2)this->_snake.at(0).y -= CELL_W;
+        if(this->_direction == 3)this->_snake.at(0).y += CELL_W;
 
         for(auto part=this->_snake.begin()+1; part != this->_snake.end(); part++)
         {
@@ -52,7 +56,6 @@ public:
                 old_pos=(*part);
                 (*part)=old_pos_head;
             }
-
             else
             {
                 tmp_pos=(*part);

@@ -34,7 +34,7 @@ public:
         this->_fruit.y=(rand()%29+1)*16;
     }
 
-    void update(Snake &snake,unsigned int &score)
+    bool update(Snake &snake,unsigned int &score, int& seconds)
     {
 
         for(auto &cell : this->_grid)
@@ -43,8 +43,8 @@ public:
             {
                 if(cell.getPosition().x == snake_part.x && cell.getPosition().y == snake_part.y)
                 {
-                    cell.setOutlineThickness(1);
-                    cell.setOutlineColor(sf::Color::Blue);
+//                    cell.setOutlineThickness(1);
+//                    cell.setOutlineColor(sf::Color::Blue);
                     cell.setFillColor(sf::Color::Green);
                     break;
                 }
@@ -53,7 +53,8 @@ public:
                 {
                     snake.grow();
                     generateFruit();
-                    score+=1;
+                    score += 1;
+                    seconds = 0;
                 }
                 else if(this->_fruit.x == cell.getPosition().x && this->_fruit.y == cell.getPosition().y)
                 {
@@ -61,27 +62,15 @@ public:
                     cell.setOutlineColor(sf::Color::Blue);
                     cell.setFillColor(sf::Color::Red);
                 }
-
-                else if(snake_part.x > 624)
-                    snake.reset(0,snake_part.y);
-
-                else if(snake_part.x < 0)
-                    snake.reset(624,snake_part.y);
-
-                else if(snake_part.y > 464)
-                    snake.reset(snake_part.x,0);
-
-                else if(snake_part.y < 0)
-                    snake.reset(snake_part.x,464);
-
+                else if(snake_part.x > 624 || snake_part.x < 0 || snake_part.y > 464 || snake_part.y < 0)
+                    return true;
                 else
                 {
-                    //	cell.setOutlineThickness(0);
                     cell.setFillColor(sf::Color::Transparent);
                 }
             }
         }
-
+        return false;
     }
 
     void clearTrack()
