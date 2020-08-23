@@ -18,7 +18,7 @@ std::string hscore;
 
 bool loose=false;
 bool pause=false;
-float delay=0.09;
+float delay=0.04;
 
 void getHIScore(std::string &new_hscore, int game_score,bool mode=0)
 {
@@ -93,12 +93,14 @@ int main()
             game.getSnake(snake.getPosition());
             loose = snake.check_collision();
             loose = game.update(snake,score, seconds);
-
-            if(diff_chrono.getElapsedTime().asSeconds()  > 15)
-            {
-                if(delay > 0.02) delay-=0.01;
-                diff_chrono.restart();
-            }
+            if(delay < 0.5)
+                game.update_delay(snake, delay);
+            std::cout << delay << std::endl;
+//            if(diff_chrono.getElapsedTime().asSeconds()  > 15)
+//            {
+////                if(delay > 0.02) delay-=0.01;
+////                diff_chrono.restart();
+//            }
 
             if(chrono.getElapsedTime().asSeconds() > delay)
             {

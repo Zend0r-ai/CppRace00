@@ -38,6 +38,7 @@ public:
         return this->_direction;
     }
 
+
     void move()
     {
         sf::Vector2f old_pos_head=this->_snake.at(0);
@@ -80,7 +81,7 @@ public:
     {
         sf::Vector2f headXY=this->_snake.at(0);
 
-        for(auto part=this->_snake.begin()+1; part != this->_snake.end();  ++part)
+        for(auto part=this->_snake.begin(); part != this->_snake.end();  ++part)
             if((*part).x == headXY.x && (*part).y == headXY.y)
                 return true;
         return false;

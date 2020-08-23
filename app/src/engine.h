@@ -34,6 +34,12 @@ public:
         this->_fruit.y=(rand()%29+1)*16;
     }
 
+    void update_delay(Snake &snake, float& delay){
+        delay = 0.04 + ((snake.GetSnakeSize() - 1) * (0.005));
+//        for(int i = 0; i  < snake.GetSnakeSize(); i++)
+    }
+
+
     bool update(Snake &snake,unsigned int &score, int& seconds)
     {
 
