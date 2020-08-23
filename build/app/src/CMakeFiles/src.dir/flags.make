@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -Dsrc_EXPORTS
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/vkniaziev/Desktop/race00/app/src/../../3dparty/SFML/include/SFML -I/Users/vkniaziev/Desktop/race00/3dparty/sfml/include
 
 CXX_FLAGSx86_64 =  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -fPIC -std=c++17
 

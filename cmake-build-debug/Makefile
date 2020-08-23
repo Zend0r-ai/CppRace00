@@ -242,17 +242,17 @@ sfml-audio/fast:
 .PHONY : sfml-audio/fast
 
 #=============================================================================
-# Target rules for targets named MyProject
+# Target rules for targets named race00
 
 # Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
+race00: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 race00
+.PHONY : race00
 
 # fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+race00/fast:
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/build
+.PHONY : race00/fast
 
 #=============================================================================
 # Target rules for targets named src
@@ -279,7 +279,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyProject"
+	@echo "... race00"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"

@@ -250,7 +250,6 @@ clean: app/clean
 
 # Recursive "all" directory target.
 app/all: app/CMakeFiles/race00.dir/all
-app/all: app/CMakeFiles/MyProject.dir/all
 app/all: app/src/all
 
 .PHONY : app/all
@@ -262,7 +261,6 @@ app/preinstall: app/src/preinstall
 
 # Recursive "clean" directory target.
 app/clean: app/CMakeFiles/race00.dir/clean
-app/clean: app/CMakeFiles/MyProject.dir/clean
 app/clean: app/src/clean
 
 .PHONY : app/clean
@@ -401,12 +399,12 @@ sfml-graphics: 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/rule
 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target sfml-audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target sfml-audio"
 .PHONY : 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 
 # Build rule for subdir invocation for target.
 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 0
 .PHONY : 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
@@ -425,15 +423,17 @@ sfml-audio: 3dparty/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
 # Target rules for target app/CMakeFiles/race00.dir
 
 # All Build rule for target.
-app/CMakeFiles/race00.dir/all: app/src/CMakeFiles/src.dir/all
+app/CMakeFiles/race00.dir/all: 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/all
+app/CMakeFiles/race00.dir/all: 3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+app/CMakeFiles/race00.dir/all: 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=2,3 "Built target race00"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=1,2 "Built target race00"
 .PHONY : app/CMakeFiles/race00.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/race00.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 72
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/race00.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/race00.dir/rule
@@ -449,39 +449,12 @@ app/CMakeFiles/race00.dir/clean:
 .PHONY : app/CMakeFiles/race00.dir/clean
 
 #=============================================================================
-# Target rules for target app/CMakeFiles/MyProject.dir
-
-# All Build rule for target.
-app/CMakeFiles/MyProject.dir/all: 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/all
-app/CMakeFiles/MyProject.dir/all: 3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-app/CMakeFiles/MyProject.dir/all: 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=1 "Built target MyProject"
-.PHONY : app/CMakeFiles/MyProject.dir/all
-
-# Build rule for subdir invocation for target.
-app/CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 71
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/MyProject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 0
-.PHONY : app/CMakeFiles/MyProject.dir/rule
-
-# Convenience name for target.
-MyProject: app/CMakeFiles/MyProject.dir/rule
-
-.PHONY : MyProject
-
-# clean rule for target.
-app/CMakeFiles/MyProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/clean
-.PHONY : app/CMakeFiles/MyProject.dir/clean
-
-#=============================================================================
 # Target rules for target app/src/CMakeFiles/src.dir
 
 # All Build rule for target.
-app/src/CMakeFiles/src.dir/all:
+app/src/CMakeFiles/src.dir/all: 3dparty/sfml/src/SFML/System/CMakeFiles/sfml-system.dir/all
+app/src/CMakeFiles/src.dir/all: 3dparty/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+app/src/CMakeFiles/src.dir/all: 3dparty/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
 	$(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=99,100 "Built target src"
@@ -489,7 +462,7 @@ app/src/CMakeFiles/src.dir/all:
 
 # Build rule for subdir invocation for target.
 app/src/CMakeFiles/src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 72
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/src/CMakeFiles/src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/vkniaziev/Desktop/race00/build/CMakeFiles 0
 .PHONY : app/src/CMakeFiles/src.dir/rule

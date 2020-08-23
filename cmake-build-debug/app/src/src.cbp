@@ -24,6 +24,8 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/vkniaziev/Desktop/race00/app/src/../../3dparty/SFML/include/SFML"/>
+					<Add directory="/Users/vkniaziev/Desktop/race00/3dparty/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -45,6 +47,8 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/vkniaziev/Desktop/race00/app/src/../../3dparty/SFML/include/SFML"/>
+					<Add directory="/Users/vkniaziev/Desktop/race00/3dparty/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -60,10 +64,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.cpp">
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Engine.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.h">
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Food.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Food.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Snake.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Snake.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/vkniaziev/Desktop/race00/CMakeLists.txt">

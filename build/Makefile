@@ -254,19 +254,6 @@ race00/fast:
 .PHONY : race00/fast
 
 #=============================================================================
-# Target rules for targets named MyProject
-
-# Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
-
-# fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
-
-#=============================================================================
 # Target rules for targets named src
 
 # Build rule for target.
@@ -291,7 +278,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyProject"
 	@echo "... race00"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"

@@ -64,7 +64,6 @@
 /Users/vkniaziev/Desktop/race00/build/app/CMakeFiles/rebuild_cache.dir
 /Users/vkniaziev/Desktop/race00/build/app/CMakeFiles/edit_cache.dir
 /Users/vkniaziev/Desktop/race00/build/app/CMakeFiles/race00.dir
-/Users/vkniaziev/Desktop/race00/build/app/CMakeFiles/MyProject.dir
 /Users/vkniaziev/Desktop/race00/build/app/src/CMakeFiles/install/local.dir
 /Users/vkniaziev/Desktop/race00/build/app/src/CMakeFiles/install/strip.dir
 /Users/vkniaziev/Desktop/race00/build/app/src/CMakeFiles/install.dir

@@ -354,6 +354,9 @@ sfml-window_LIB_DEPENDS:STATIC=general;-stdlib=libc++;general;sfml-system;genera
 //Value Computed by CMake
 src_BINARY_DIR:STATIC=/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src
 
+//Dependencies for the target
+src_LIB_DEPENDS:STATIC=general;sfml-graphics;general;sfml-window;general;sfml-system;
+
 //Value Computed by CMake
 src_SOURCE_DIR:STATIC=/Users/vkniaziev/Desktop/race00/app/src
 

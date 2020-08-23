@@ -18,7 +18,7 @@ add_compile_options(
         -Wno-unused-parameter
 )
 
-add_executable(MyProject main.cpp)
-target_link_libraries (MyProject sfml-graphics sfml-window sfml-system)
-add_executable(race00 ${SOURCE_EXE})
-target_link_libraries(race00 src)
+add_executable(race00 main.cpp src/Snake.cpp src/Snake.h src/Engine.h)
+target_link_libraries (race00 sfml-graphics sfml-window sfml-system)
+#add_executable(race00 ${SOURCE_EXE})
+#target_link_libraries(race00 src)

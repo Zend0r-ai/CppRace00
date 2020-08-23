@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/src.dir/test.cpp.o"
+  "CMakeFiles/src.dir/Food.cpp.o"
+  "CMakeFiles/src.dir/Snake.cpp.o"
   "libsrc.dylib"
   "libsrc.pdb"
 )

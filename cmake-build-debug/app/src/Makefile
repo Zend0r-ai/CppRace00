@@ -191,32 +191,59 @@ src/fast:
 	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
-test.o: test.cpp.o
+Food.o: Food.cpp.o
 
-.PHONY : test.o
+.PHONY : Food.o
 
 # target to build an object file
-test.cpp.o:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/test.cpp.o
-.PHONY : test.cpp.o
+Food.cpp.o:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Food.cpp.o
+.PHONY : Food.cpp.o
 
-test.i: test.cpp.i
+Food.i: Food.cpp.i
 
-.PHONY : test.i
+.PHONY : Food.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/test.cpp.i
-.PHONY : test.cpp.i
+Food.cpp.i:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Food.cpp.i
+.PHONY : Food.cpp.i
 
-test.s: test.cpp.s
+Food.s: Food.cpp.s
 
-.PHONY : test.s
+.PHONY : Food.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/test.cpp.s
-.PHONY : test.cpp.s
+Food.cpp.s:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Food.cpp.s
+.PHONY : Food.cpp.s
+
+Snake.o: Snake.cpp.o
+
+.PHONY : Snake.o
+
+# target to build an object file
+Snake.cpp.o:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Snake.cpp.o
+.PHONY : Snake.cpp.o
+
+Snake.i: Snake.cpp.i
+
+.PHONY : Snake.i
+
+# target to preprocess a source file
+Snake.cpp.i:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Snake.cpp.i
+.PHONY : Snake.cpp.i
+
+Snake.s: Snake.cpp.s
+
+.PHONY : Snake.s
+
+# target to generate assembly for a file
+Snake.cpp.s:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/src/CMakeFiles/src.dir/build.make app/src/CMakeFiles/src.dir/Snake.cpp.s
+.PHONY : Snake.cpp.s
 
 # Help Target
 help:
@@ -231,9 +258,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... src"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... Food.o"
+	@echo "... Food.i"
+	@echo "... Food.s"
+	@echo "... Snake.o"
+	@echo "... Snake.i"
+	@echo "... Snake.s"
 .PHONY : help
 
 

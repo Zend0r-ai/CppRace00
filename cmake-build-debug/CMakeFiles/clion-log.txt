@@ -45,17 +45,5 @@ Call Stack (most recent call first):
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
-CMake Error at app/src/CMakeLists.txt:4 (add_library):
-  Cannot find source file:
-
-    Snake.h.h
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at app/src/CMakeLists.txt:4 (add_library):
-  No SOURCES given to target: src
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /Users/vkniaziev/Desktop/race00/cmake-build-debug

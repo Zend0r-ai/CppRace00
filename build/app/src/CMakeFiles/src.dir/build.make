@@ -98,6 +98,9 @@ src_EXTERNAL_OBJECTS =
 
 app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/Snake.cpp.o
 app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/build.make
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-graphics.2.5.1.dylib
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-window.2.5.1.dylib
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-system.2.5.1.dylib
 app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vkniaziev/Desktop/race00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libsrc.dylib"
 	cd /Users/vkniaziev/Desktop/race00/build/app/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)

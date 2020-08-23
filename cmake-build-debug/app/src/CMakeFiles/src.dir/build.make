@@ -77,30 +77,48 @@ include app/src/CMakeFiles/src.dir/progress.make
 # Include the compile flags for this target's objects.
 include app/src/CMakeFiles/src.dir/flags.make
 
-app/src/CMakeFiles/src.dir/test.cpp.o: app/src/CMakeFiles/src.dir/flags.make
-app/src/CMakeFiles/src.dir/test.cpp.o: ../app/src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vkniaziev/Desktop/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/src/CMakeFiles/src.dir/test.cpp.o"
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/test.cpp.o -c /Users/vkniaziev/Desktop/race00/app/src/test.cpp
+app/src/CMakeFiles/src.dir/Snake.cpp.o: app/src/CMakeFiles/src.dir/flags.make
+app/src/CMakeFiles/src.dir/Snake.cpp.o: ../app/src/Snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vkniaziev/Desktop/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/src/CMakeFiles/src.dir/Snake.cpp.o"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/Snake.cpp.o -c /Users/vkniaziev/Desktop/race00/app/src/Snake.cpp
 
-app/src/CMakeFiles/src.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/test.cpp.i"
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vkniaziev/Desktop/race00/app/src/test.cpp > CMakeFiles/src.dir/test.cpp.i
+app/src/CMakeFiles/src.dir/Snake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Snake.cpp.i"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vkniaziev/Desktop/race00/app/src/Snake.cpp > CMakeFiles/src.dir/Snake.cpp.i
 
-app/src/CMakeFiles/src.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/test.cpp.s"
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vkniaziev/Desktop/race00/app/src/test.cpp -o CMakeFiles/src.dir/test.cpp.s
+app/src/CMakeFiles/src.dir/Snake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Snake.cpp.s"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vkniaziev/Desktop/race00/app/src/Snake.cpp -o CMakeFiles/src.dir/Snake.cpp.s
+
+app/src/CMakeFiles/src.dir/Food.cpp.o: app/src/CMakeFiles/src.dir/flags.make
+app/src/CMakeFiles/src.dir/Food.cpp.o: ../app/src/Food.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vkniaziev/Desktop/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object app/src/CMakeFiles/src.dir/Food.cpp.o"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/Food.cpp.o -c /Users/vkniaziev/Desktop/race00/app/src/Food.cpp
+
+app/src/CMakeFiles/src.dir/Food.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Food.cpp.i"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/vkniaziev/Desktop/race00/app/src/Food.cpp > CMakeFiles/src.dir/Food.cpp.i
+
+app/src/CMakeFiles/src.dir/Food.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Food.cpp.s"
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/vkniaziev/Desktop/race00/app/src/Food.cpp -o CMakeFiles/src.dir/Food.cpp.s
 
 # Object files for target src
 src_OBJECTS = \
-"CMakeFiles/src.dir/test.cpp.o"
+"CMakeFiles/src.dir/Snake.cpp.o" \
+"CMakeFiles/src.dir/Food.cpp.o"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
 
-app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/test.cpp.o
+app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/Snake.cpp.o
+app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/Food.cpp.o
 app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/build.make
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-graphics-d.2.5.1.dylib
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-window-d.2.5.1.dylib
+app/src/libsrc.dylib: 3dparty/sfml/lib/libsfml-system-d.2.5.1.dylib
 app/src/libsrc.dylib: app/src/CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vkniaziev/Desktop/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libsrc.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vkniaziev/Desktop/race00/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libsrc.dylib"
 	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/src.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

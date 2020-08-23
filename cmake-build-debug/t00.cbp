@@ -335,8 +335,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/3dparty/sfml/src/SFML/Audio/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MyProject">
-				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/MyProject" prefix_auto="0" extension_auto="0"/>
+			<Target title="race00">
+				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/race00" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -352,14 +352,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 MyProject"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 race00"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="MyProject/fast">
-				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/MyProject" prefix_auto="0" extension_auto="0"/>
+			<Target title="race00/fast">
+				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/race00" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -375,7 +375,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 MyProject/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 race00/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
@@ -388,6 +388,8 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/vkniaziev/Desktop/race00/app/src/../../3dparty/SFML/include/SFML"/>
+					<Add directory="/Users/vkniaziev/Desktop/race00/3dparty/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -409,6 +411,8 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/vkniaziev/Desktop/race00/app/src/../../3dparty/SFML/include/SFML"/>
+					<Add directory="/Users/vkniaziev/Desktop/race00/3dparty/sfml/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
@@ -1241,12 +1245,25 @@
 			<Option target="sfml-window"/>
 		</Unit>
 		<Unit filename="/Users/vkniaziev/Desktop/race00/app/main.cpp">
-			<Option target="MyProject"/>
+			<Option target="race00"/>
 		</Unit>
-		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.cpp">
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Engine.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.h">
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Food.cpp">
+			<Option target="race00"/>
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Food.h">
+			<Option target="race00"/>
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Snake.cpp">
+			<Option target="race00"/>
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/Snake.h">
+			<Option target="race00"/>
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/Users/vkniaziev/Desktop/race00/CMakeLists.txt">

@@ -63,7 +63,7 @@
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/CMakeFiles/list_install_components.dir
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/CMakeFiles/rebuild_cache.dir
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/CMakeFiles/edit_cache.dir
-/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/CMakeFiles/MyProject.dir
+/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/CMakeFiles/race00.dir
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/CMakeFiles/install/local.dir
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/CMakeFiles/install/strip.dir
 /Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/CMakeFiles/install.dir

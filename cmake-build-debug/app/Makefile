@@ -177,19 +177,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-app/CMakeFiles/MyProject.dir/rule:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/MyProject.dir/rule
-.PHONY : app/CMakeFiles/MyProject.dir/rule
+app/CMakeFiles/race00.dir/rule:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/race00.dir/rule
+.PHONY : app/CMakeFiles/race00.dir/rule
 
 # Convenience name for target.
-MyProject: app/CMakeFiles/MyProject.dir/rule
+race00: app/CMakeFiles/race00.dir/rule
 
-.PHONY : MyProject
+.PHONY : race00
 
 # fast build rule for target.
-MyProject/fast:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+race00/fast:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/build
+.PHONY : race00/fast
 
 main.o: main.cpp.o
 
@@ -197,7 +197,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/main.cpp.o
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -206,7 +206,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/main.cpp.i
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -215,8 +215,62 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/MyProject.dir/build.make app/CMakeFiles/MyProject.dir/main.cpp.s
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Food.o: src/Food.cpp.o
+
+.PHONY : src/Food.o
+
+# target to build an object file
+src/Food.cpp.o:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Food.cpp.o
+.PHONY : src/Food.cpp.o
+
+src/Food.i: src/Food.cpp.i
+
+.PHONY : src/Food.i
+
+# target to preprocess a source file
+src/Food.cpp.i:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Food.cpp.i
+.PHONY : src/Food.cpp.i
+
+src/Food.s: src/Food.cpp.s
+
+.PHONY : src/Food.s
+
+# target to generate assembly for a file
+src/Food.cpp.s:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Food.cpp.s
+.PHONY : src/Food.cpp.s
+
+src/Snake.o: src/Snake.cpp.o
+
+.PHONY : src/Snake.o
+
+# target to build an object file
+src/Snake.cpp.o:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Snake.cpp.o
+.PHONY : src/Snake.cpp.o
+
+src/Snake.i: src/Snake.cpp.i
+
+.PHONY : src/Snake.i
+
+# target to preprocess a source file
+src/Snake.cpp.i:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Snake.cpp.i
+.PHONY : src/Snake.cpp.i
+
+src/Snake.s: src/Snake.cpp.s
+
+.PHONY : src/Snake.s
+
+# target to generate assembly for a file
+src/Snake.cpp.s:
+	cd /Users/vkniaziev/Desktop/race00/cmake-build-debug && $(MAKE) $(MAKESILENT) -f app/CMakeFiles/race00.dir/build.make app/CMakeFiles/race00.dir/src/Snake.cpp.s
+.PHONY : src/Snake.cpp.s
 
 # Help Target
 help:
@@ -230,10 +284,16 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyProject"
+	@echo "... race00"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Food.o"
+	@echo "... src/Food.i"
+	@echo "... src/Food.s"
+	@echo "... src/Snake.o"
+	@echo "... src/Snake.i"
+	@echo "... src/Snake.s"
 .PHONY : help
 
 
