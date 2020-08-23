@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vkniaziev/Desktop/race00/app/src/Snake.cpp
+Snake.h
+/Users/vkniaziev/Desktop/race00/app/src/Snake.h
+
+/Users/vkniaziev/Desktop/race00/app/src/Snake.h
+

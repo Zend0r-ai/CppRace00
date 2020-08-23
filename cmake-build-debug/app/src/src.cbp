@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\3dparty\;CMake Files\3dparty\sfml\;CMake Files\3dparty\sfml\cmake\;CMake Files\3dparty\sfml\cmake\Modules\;CMake Files\3dparty\sfml\src\;CMake Files\3dparty\sfml\src\SFML\;CMake Files\3dparty\sfml\src\SFML\System\;CMake Files\3dparty\sfml\src\SFML\Window\;CMake Files\3dparty\sfml\src\SFML\Network\;CMake Files\3dparty\sfml\src\SFML\Graphics\;CMake Files\3dparty\sfml\src\SFML\Audio\;CMake Files\app\;CMake Files\app\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src">
+				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/libsrc.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 src"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="src/fast">
+				<Option output="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/libsrc.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 src/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vkniaziev/Desktop/race00/cmake-build-debug/app/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/test.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/Config.cmake">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/Macros.cmake">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/SFMLConfig.cmake.in">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/SFMLConfigDependencies.cmake.in">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/Modules/FindFLAC.cmake">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/Modules/FindFreetype.cmake">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/cmake/Modules/FindVorbis.cmake">
+			<Option virtualFolder="CMake Files\3dparty\sfml\cmake\Modules\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/System/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\System\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/Window/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Window\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/Network/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Network\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/Graphics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Graphics\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/3dparty/sfml/src/SFML/Audio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3dparty\sfml\src\SFML\Audio\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\app\"/>
+		</Unit>
+		<Unit filename="/Users/vkniaziev/Desktop/race00/app/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\app\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
