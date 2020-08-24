@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 project(app_project LANGUAGES CXX)
 set(SOURCE_EXE main.cpp)
 add_subdirectory(src)
+add_subdirectory(render)
 include_directories(../3dparty/SFML/include/SFML/)
 
 add_compile_options(
@@ -18,7 +19,8 @@ add_compile_options(
         -Wno-unused-parameter
 )
 
-add_executable(race00 main.cpp src/Snake.cpp src/Snake.h src/Engine.h)
+add_executable(race00 main.cpp src/Snake.cpp src/engine.cpp src/Menu.cpp
+                src/LeaderBoard.cpp src/GameWindow.cpp src/GameOverWindow.cpp
+                render/menuWindow.cpp render/GameWindow.cpp render/OptionWindow.cpp
+                render/GameOverWindowRender.cpp)
 target_link_libraries (race00 sfml-graphics sfml-window sfml-system)
-#add_executable(race00 ${SOURCE_EXE})
-#target_link_libraries(race00 src)
